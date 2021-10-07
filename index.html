@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+</style>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="style.css"><!--Linking style sheet-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><!--Linking Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@580&display=swap" rel="stylesheet">
+
+</head>
+<body class="bodyContainer"><!--Everything sits in this element, with the class bodyContainer-->
+
+  <div class="headerInfo">
+    <h1 class="mainHeader">ETCH-A-SKETCH</h1>
+    <p class="infoLine">SELECT BOARD OPTION TO BEGIN DRAWING</p>
+  </div>
+  <div id="spaceOne"></div><!--Styled space between header and game board-->
+  <div class="gameBoard">
+
+    <div></div> <!--Empty div to fill grid-->
+
+    <div class="settingsBarOne">
+      <p id="settingsText">SETTINGS:</p>
+      <button id="buttonSettingBoard">BOARD</button>
+      <div style="height: 50px; width: 150px"></div>
+      <button id="buttonSettingColor">COLOR</button>
+      <div style="height: 50px; width: 150px"></div>
+      <button id="buttonSettingStyle">STYLE</button>
+      <div style="height: 60px; width: 150px"></div>
+      <button id="closeButton">CLOSE</button>
+      <div style="height: 110px; width: 150px"></div>
+    </div>
+
+    <div></div> <!--Empty div to fill grid-->
+
+    <div class="settingsBarTwo"><!--Declared "empty", DOM manipulated in the script-->
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+      <div id="emptyDiv"></div>
+    </div>
+
+    <div class="drawingBoard">
+ 
+      <div></div>
+      <div class="boardBody"></div>
+      <div></div>
+
+    </div>
+
+    <div></div>
+
+    <div class="statusBar">
+      <div></div>
+      <p id="statusTextStyleHeader">STYLE :</p>
+      <p id="statusTextStyleValue">COLOR</p>
+      <p id="statusTextDrawHeader">DRAW :</p>
+      <p id="statusTextDrawValue">OFF</p>
+      <p id="statusTextDrawInstruction">CLICK BOARD TO ACTIVATE / DEACTIVATE.</p>
+      <div></div>
+      <p id="statusTextBoardHeader">LOADED :</p>
+      <p id="statusTextBoardValue">-</p>
+      <div></div>
+    </div>
+
+    <div></div> <!--Empty div to fill grid-->
+
+  </div>
+  <script type="text/javascript" src="code.js">
+    // Your JavaScript goes here
+  </script>
+</body>
+</html>
+

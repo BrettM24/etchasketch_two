@@ -1,0 +1,417 @@
+.mainHeader{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: 'Dosis';
+    color: rgb(193, 240, 248);
+    font-size: 50px;
+    font-weight: 100;
+}
+.infoLine{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: 'Dosis';
+    color: rgb(193, 240, 248);
+    font-size: 15px;
+    font-weight: 100;
+}
+.bodyContainer{
+    background-color: rgb(2, 1, 20);
+}
+.gameBoard{
+    display: grid;
+    grid-template-columns: 150px 150px 50px 150px 1fr 200px 150px 150px;
+    grid-template-rows: 510px;
+}
+.drawingBoard{
+    display: grid;
+    grid-template-columns: 1fr 510px 1fr;
+}
+.boardBody{
+    border-style: solid;
+    border-color:rgb(193, 240, 248);
+    border-radius: 2%;
+    border-width: 5px 5px 5px 5px;
+    background-color: rgb(2, 1, 20);
+    height: 500px;
+    width: 500px;
+}
+.boardBodyTen{
+    border-style: solid;
+    border-color:rgb(193, 240, 248);
+    border-radius: 2%;
+    border-width: 5px 5px 5px 5px;
+    background-color: rgb(2, 1, 20);
+    height: 500px;
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+}
+.boardBodyTwenty{
+    border-style: solid;
+    border-color:rgb(193, 240, 248);
+    border-radius: 2%;
+    border-width: 5px 5px 5px 5px;
+    background-color: rgb(2, 1, 20);
+    height: 500px;
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(20, 25px);
+    grid-template-rows: repeat(20, 25px);
+}
+
+.boardBodyFifty{
+    border-style: solid;
+    border-color:rgb(193, 240, 248);
+    border-radius: 2%;
+    border-width: 5px 5px 5px 5px;
+    background-color: rgb(2, 1, 20);
+    height: 500px;
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(50, 10px);
+    grid-template-rows: repeat(50, 10px);
+}
+
+.boardBodyHundred{
+    border-style: solid;
+    border-color:rgb(193, 240, 248);
+    border-radius: 2%;
+    border-width: 5px 5px 5px 5px;
+    background-color: rgb(2, 1, 20);
+    height: 500px;
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(100, 5px);
+    grid-template-rows: repeat(100, 5px);
+}
+
+.statusBar{
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 60px;
+}
+.settingsBarOne{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 150px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 60px 40px 110px;
+}
+.settingsBarTwo{
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 50px 40px 12.5px 40px 12.5px 40px 12.5px 40px 12.5px 40px 25px 75px 110px;
+}
+#closeButton{
+    color: rgb(193, 240, 248);
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 120px;
+    height: 40px;
+}
+#buttonSettingBoard{
+    color: rgb(193, 240, 248);
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 50px;
+}
+#buttonSettingColor{
+    color: rgb(193, 240, 248);
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 50px;
+}
+#buttonSettingStyle{
+    color: rgb(193, 240, 248);
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 50px;
+}
+#buttonBoardClear{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+}
+#buttonBoardTen{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+}
+#buttonBoardTwenty{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+}
+#buttonBoardFifty{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+}
+#buttonBoardHundred{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+}
+#buttonStyleEraser{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 40px;
+}
+#buttonStyleLight{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 40px;
+}
+#buttonStyleMulti{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 40px;
+}
+#buttonStyleColor{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 150px;
+    height: 40px;
+}
+#colorRowOne{
+    display: grid;
+    grid-template-columns: 72.5px 5px 72.5px;
+}
+#colorRowTwo{
+    display: grid;
+    grid-template-columns: 72.5px 5px 72.5px;
+}
+#colorRowThree{
+    display: grid;
+    grid-template-columns: 72.5px 5px 72.5px;
+}
+#colorRowFour{
+    display: grid;
+    grid-template-columns: 72.5px 5px 72.5px;
+}
+#buttonColorWhite{
+    color: rgb(193, 240, 248); 
+    border-color: rgb(193, 240, 248);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorYellow{
+    color: rgb(238, 253, 173); 
+    border-color: rgb(238, 253, 173);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorOrange{
+    color: rgb(255, 210, 144); 
+    border-color: rgb(255, 210, 144);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorBlue{
+    color: rgb(128, 172, 255); 
+    border-color: rgb(128, 172, 255);
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorGreen{
+    color: rgb(160, 255, 160); 
+    border-color: rgb(160, 255, 160); 
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorRed{
+    color: rgb(255, 113, 113); 
+    border-color: rgb(255, 113, 113); 
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorPink{
+    color: rgb(255, 119, 226); 
+    border-color: rgb(255, 119, 226); 
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#buttonColorPurple{
+    color: rgb(200, 134, 255); 
+    border-color: rgb(200, 134, 255); 
+    background-color: rgb(2, 1, 20);
+    border-radius: 5%;
+    border-width: 3px;
+    font-family: 'Dosis';
+    width: 72.5px;
+    height: 40px;
+}
+#settingsText{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+
+    text-align: center;
+}
+#statusTextStyleHeader{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+
+}
+#statusTextStyleValue{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+
+}
+#statusTextDrawHeader{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+
+}
+#statusTextDrawValue{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+
+}
+#statusTextDrawInstruction{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+
+}
+#spaceOne{
+    height: 100px;
+    width: 1fr;
+}
+#statusTextBoardHeader{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+}
+
+#statusTextBoardValue{
+    color: rgb(193, 240, 248);
+    font-family: 'Dosis';
+
+    height: 50px;
+    width: 150px;
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+}
